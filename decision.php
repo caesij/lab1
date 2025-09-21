@@ -3,15 +3,15 @@
 
     if ($grade >= 75)
     {
-        echo "Passed.<br>";
+        echo "Passed.";
+
+        if ($grade >= 90)
+        {
+            echo "<br>With Honors.";
+        }
     }
-    elseif ($grade < 75) 
+    else
     {
         echo "Failed.";
-    }
-    
-    if ($grade >= 90)
-    {
-        echo "With Honors.";
     }
 ?>
