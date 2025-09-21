@@ -1,15 +1,15 @@
 <?php
-    $studGrade = 99;
+    $grade = 92;
 
-    if ($studGrade >= 90)
+    if ($grade >= 75)
+    {
+        echo "Passed.<br>";
+    }
+    if ($grade >= 90) 
     {
         echo "With Honors.";
     }
-    elseif ($studGrade >= 75)
-    {
-        echo "Passed.";
-    }
-    else
+    if ($grade < 75)
     {
         echo "Failed.";
     }
