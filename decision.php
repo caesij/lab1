@@ -1,17 +1,19 @@
 <?php
     $grade = 92;
 
+    echo "Student's Grade: " . $grade . "<br /><br />";
+
     if ($grade >= 75)
     {
-        echo "Passed.";
+        echo "Passed";
 
         if ($grade >= 90)
         {
-            echo "<br>With Honors.";
+            echo " - With Honors";
         }
     }
     else
     {
-        echo "Failed.";
+        echo "Failed";
     }
 ?>
