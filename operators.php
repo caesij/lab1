@@ -4,11 +4,11 @@
     
     echo "a. Arithmetic Operators<br><br>";
 
-    echo "Addition: " . ($a + $b) . "<br>";
-    echo "Subtraction: " . ($a - $b) . "<br>";
-    echo "Multiplication: " . ($a * $b) . "<br>";
-    echo "Division: " . ($a / $b) . "<br>";
-    echo "Modulo: " . ($a % $b) . "<br><br><br>";
+    echo "{$a} + {$b} = " . ($a + $b) . "<br>";
+    echo "{$a} - {$b} = " . ($a - $b) . "<br>";
+    echo "{$a} * {$b} = " . ($a * $b) . "<br>";
+    echo "{$a} / {$b} = " . ($a / $b) . "<br>";
+    echo "{$a} % {$b} = " . ($a % $b) . "<br><br><br>";
 
     echo "b. Comparison Operators<br><br>";
 
@@ -21,18 +21,7 @@
 
     echo "c. Logical Operators<br><br>";
 
-    if ($a == 10 && $b == 5)
-    {
-       echo "&& operator success.<br>"; 
-    }
-
-    if ($a == 10 || $b == 5)
-    {
-        echo "|| operator success.<br>";
-    }
-
-    if (!($a == $b))
-    {
-        echo "! operator success.";
-    }
+    echo "({$a} == 10 && {$b} == 5) - " . (($a == 10 && $b == 5) ? "true" : "false") . "<br>";
+    echo "({$a} == 10 || {$b} > 9) - " . (($a == 10 || $b > 5) ? "true" : "false") . "<br>";
+    echo "!({$a} == {$b}) - " . (!($a == $b) ? "true" : "false");
 ?>
